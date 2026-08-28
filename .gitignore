@@ -1,0 +1,5 @@
+audit-report.md
+audit-report.html
+.env
+__pycache__/
+.DS_Store
