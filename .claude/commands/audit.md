@@ -111,6 +111,8 @@ Prospect mode has no Search Console access and usually no Business Profile acces
 
 **0b. Ask for the Search Console exports (Layer 1) before anything else.** They take two minutes and they change what every other layer can prove. Do not begin grading until they have landed or I have explicitly said to run without them.
 
+**0c. Ask for the three Business Profile pastes, in the same breath.** No API returns categories, services, service areas or products, and those are the four marks the local layer grades against. Ask the owner, desktop, logged into the account that owns the profile: Google-search the business name, the profile panel appears at the top. Then: **Edit profile → About** (select all, copy, paste: categories, description, service area) · **Edit services** (select all, copy, paste) · **Edit products** (select all, copy, paste). Screenshots work too. Two minutes. Reviews, rating, hours, photos, phone and website are pulled automatically, never ask for those. **Prospect mode:** no pastes. Pull all categories, attributes, hours, photos and reviews with the Apify Google Maps scraper (`compass/crawler-google-places`, about a cent a listing) plus the Places API; services and products then read "not visible from outside" and the local score says so.
+
 **1. Get the page list. Ask for the sitemap first.** Say: *"Paste your sitemap URL (usually yoursite.com/sitemap.xml) - or paste the list of your page URLs. If you don't have one, say so and I'll find them."* In order:
 - Sitemap pasted → use it, that's the inventory
 - Nothing pasted → fetch `sitemap.xml` myself
@@ -329,6 +331,8 @@ Pull what the site ACTUALLY ranks for - from the Layer 1 Search Console Performa
 - Which services have no page at all?
 - Given the referring-domain count from Layer 4, which of the target keywords are realistically reachable this year and which are not? A keyword map that ignores the link gap is a wish list.
 
+**The cheap keyword win that IS inside the loop:** for every page, take the keywords it already ranks for (Search Console first) and check whether the strongest one appears in the page's title tag and H1. A page ranking #14 for "water heater repair austin" with neither carrying the phrase gets it inserted - titles, metas, H1 tags and one natural insertion are allowed under THE COPY RULE. Report it as "ranks for it, not in the title" with the position, and fix it in the loop. Building keyword clusters and adding them to the body is writing; that is `/seo-optimization` and `/keyword-research expand`, never this command.
+
 **Say this plainly when it's true: the technical layer is table stakes, and the missing keyword map is the real bottleneck.** A perfect Lighthouse score on three pages targeting nothing still earns nothing. Route it to `/keyword-research` and rank it ABOVE the technical findings when it's the binding constraint - never let a tidy list of technical fixes bury the fact that there's nothing to rank.
 
 ### Layer 13 - Thin content and doorway pages
@@ -511,6 +515,8 @@ Done 13 Aug. Root layout was pointing every page at the homepage.
 **Then work it.** Top unticked item, do it, tick it, next. **Each gets its own yes** - anything touching body copy or removing something must have said so in its "Changes" line, and ticking the box is the approval. When done: tick, date, one line on what changed.
 
 **"Who" is on every item.** Some are code changes I make; some are clicks only you can do (Search Console, the Business Profile dashboard, hosting). For yours, give the exact click path.
+
+**Re-runs keep the original baseline.** When `audit-report.md` already exists, `before` on the HTML report is the earliest dated score in that file, not today's first crawl, so the report shows the whole distance travelled. Today's crawl becomes a dated row under it. Ticked items keep their dates; anything the owner still has to click is re-listed, not re-flagged as new.
 
 **Re-running `/audit`** updates this file, never replaces it. Ticked items keep their dates, returning problems re-open with a note, new findings append, and the AI-surface baseline gains a new dated row rather than overwriting the old one. Never wipe the history.
 
