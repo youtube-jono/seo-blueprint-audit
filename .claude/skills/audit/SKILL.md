@@ -1,4 +1,5 @@
 ---
+name: audit
 description: The whole-site audit - Search Console, Semrush, backlinks, on-page, technical, AI surfaces, local - scored, then fixed on a loop until it's clean
 argument-hint: [url] [focus: gsc | semrush | competitors | gap | backlinks | on-page | technical | ai | index | framework | hidden | keywords | thin | local | structure]
 ---
