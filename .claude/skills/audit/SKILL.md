@@ -1,6 +1,6 @@
 ---
-description: The whole-site audit - Search Console, Semrush, backlinks, on-page, technical, AI surfaces, local - scored, then fixed on a loop until it's clean
-argument-hint: [url] [focus: gsc | semrush | competitors | gap | backlinks | on-page | technical | ai | index | framework | hidden | keywords | thin | local | structure]
+name: audit
+description: "Whole-site SEO audit and fix. Grades every page on five layers (on-page 80 checks, technical/Lighthouse, AI readiness, doorway pages, local), reports in plain English, waits for approval, then fixes the list on a loop and writes an HTML report. Use for /audit, 'audit my site', 'SEO audit', 'score my website'."
 ---
 
 Audit AND fix the entire site: $ARGUMENTS (if no URL given, ask for one). Thirteen layers - Search Console, Semrush, the competitor benchmark, backlinks and authority, on-page, technical, AI surfaces, index hygiene, framework traps, hidden content, the keyword reality check, thin and doorway content, and local/Business Profile - graded on every page, reported in full, then - once I approve - fixed on a loop until it's clean.
