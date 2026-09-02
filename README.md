@@ -1,10 +1,10 @@
-# seo-audit
+# seo-blueprint-audit
 
-Score it, fix it, score it again. A Claude Code command that audits a whole website on five layers, then works the fix list itself on sites it can edit (custom code, WordPress) and hands you the list on the ones it can't.
+Score it, fix it, score it again. A Claude Code skill that audits a whole website on five layers, then works the fix list itself on sites it can edit (custom code, WordPress) and hands you the list on the ones it can't.
 
 ```
-git clone https://github.com/jonocatliff/seo-audit.git
-cd seo-audit
+git clone https://github.com/youtube-jono/seo-blueprint-audit.git
+cd seo-blueprint-audit
 claude
 /audit yoursite.com
 ```
