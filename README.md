@@ -11,4 +11,6 @@ claude
 
 Needs Claude Code. Semrush optional. Search Console exports optional but recommended.
 
+WordPress site? It needs the Novamira plugin + connection (lets Claude edit your site directly). `/audit` walks you through installing it at the fix step - no migration off WordPress or Elementor needed.
+
 Everything I teach publicly is free. The rest of the SEO blueprint lives in the community: https://www.skool.com/automatable-free
